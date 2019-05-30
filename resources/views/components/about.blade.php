@@ -1,1 +1,0 @@
-<p>This is about componnent</p>
