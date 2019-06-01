@@ -1,7 +1,5 @@
 <div class='badge_holder'>
-        <img src="{{ asset('img/badges/crown.png') }}">
-        <img src="{{ asset('img/badges/crown.png') }}">
-        <img src="{{ asset('img/badges/crown.png') }}">
-        <img src="{{ asset('img/badges/crown.png') }}">
-        <img src="{{ asset('img/badges/crown.png') }}">
+        @foreach ($achievements as $achievement)
+                <img src="{{ asset('img/badges/'.$achievement->icon.'') }}">
+        @endforeach
 </div>

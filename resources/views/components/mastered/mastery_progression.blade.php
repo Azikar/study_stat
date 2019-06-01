@@ -1,5 +1,5 @@
 <div class='skill_bar_pos'>
-    <div class ='mastery_progresion_title'>
+    <div class ='mastery_progression_title'>
         <span class="language">Java</span>
         <span class="mastery">ADVANCED</span>
     </div>

@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/Profile', 'PagesController@user_profile');
+Route::get('/Profile/{nickname}', 'ProfileController@user_profile');

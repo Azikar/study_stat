@@ -2,28 +2,23 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use Notifiable;
+    public function achievements(){
+        return $this->belongsToMany(Achievement::class, 'user_achievements')->get();
+    }
+    public function courses(){
+        return $this->belongsToMany(Course::class, 'user_courses')->withPivot('last_accessed','time_spent','completion')->get();
+    }
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+    public function certificates(){
+        return $this->belongsToMany(Course::class, 'user_certificates')->withPivot('featured')->get();
+    }
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    public function get_user_by_nickname($name)
+    {
+        return $this->where('nickname', $name)->firstOrFail();
+    }
 }
