@@ -3,16 +3,17 @@
     <img src="{{ asset('img/certificates/olive.png') }}">
     <div class="certificate_info">
         <div class="certificate_title">
-            Blender Tutorial: How to Master Blender Animation & 3D Game Mod
+           
+            {{$certificate->title}}
         </div>
         <div class="row margin_l">
             <div class="certificate_meta">
                 <img class="author_img" src="{{ asset('img/certificates/author.png') }}">
-                <div class="certificate_author">Mark Price</div>
+            <div class="certificate_author">{{$user->name}}</div>
             </div>
             <div class="certificate_meta">
                 <img class="author_img" src="{{ asset('img/certificates/date.png') }}">
-                <div class="certificate_author">Jan 12, 2019</div>
+                <div class="certificate_author">{{date('M-d-Y', strtotime($certificate->pivot->created_at))}}</div>
             </div>
         </div>
 

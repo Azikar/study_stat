@@ -394,8 +394,9 @@ hr {
     display: flex;
     box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.13);
     background-color: #222b3a;
-    min-width: 263px;
+    min-width: 348px;
     flex-wrap: wrap;
+    margin-bottom: 4%;
 }
 
 .certificate_card img {
@@ -450,6 +451,7 @@ hr {
     font-family: "Work Sans";
     font-weight: 300;
     margin-left: 10%;
+    height: 50px;
 }
 
 .certificate_author {

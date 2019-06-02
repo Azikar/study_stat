@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -14,9 +13,14 @@ window.Vue = require('vue');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+import Vue from 'vue';
+import VueFilterDateFormat from 'vue-filter-date-format';
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.use(VueFilterDateFormat);
+Vue.component('certificates', require('./components/certificates.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+
 });

@@ -9,7 +9,7 @@
     </div>
     <hr>
     <div>
-        @component('components.certificate_feature.featured_certificate')
+        @component('components.certificate_feature.featured_certificate',['featured'=>$featured, 'user'=>$user])
         @endcomponent
     </div>
 </div>

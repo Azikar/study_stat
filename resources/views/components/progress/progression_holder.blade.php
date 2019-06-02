@@ -10,7 +10,7 @@
     </div>
     <hr>
     <div>
-        @component('components.mastered.mastery_holder')
+        @component('components.mastered.mastery_holder',['mastered'=>$mastered])
         @endcomponent
     </div>
 </div>

@@ -16,6 +16,7 @@ class Course_calc implements Course_calc_Interface
     }
     public function total_Hours($courses){
         $total=0;
+
         foreach($courses as $course)
             $total+=$course->pivot->time_spent;
         return $total;

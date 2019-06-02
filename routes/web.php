@@ -12,3 +12,5 @@
 */
 
 Route::get('/Profile/{nickname}', 'ProfileController@user_profile');
+
+

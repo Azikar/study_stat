@@ -15,7 +15,8 @@ class Statistics_builder implements Statistics_builder_Interface
         $this->time_formater=$time_formater;
     }
     public function build_statistics($courses,$certificates){
-       return ['total_courses'=> $this->course_calc->total_Courses($courses),
+       return [
+            'total_courses'=> $this->course_calc->total_Courses($courses),
             'total_hours'=>$this->time_formater->format_time($this->course_calc->total_Hours($courses)),
             'total_certificates'=>$this->course_calc->total_Certificates($certificates)
         ];

@@ -12,7 +12,7 @@
              ])
         @endcomponent
         @component('components.completion.completion',[
-                'amount' => $statistics['total_hours'],
+                'amount' => round($statistics['total_hours']),
                 'title'=>'Hours Spent Studying',
                 'img'=>'time.png'
              ])

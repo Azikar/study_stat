@@ -10,7 +10,12 @@
     @component('components.data_holder',['about'=>$about,
     'progression_data'=>$progression,
     'achievements'=>$achievements,
-    'statistics'=>$statistics])
+    'statistics'=>$statistics,
+    'recommendations'=>$recommendations,
+    'certificates'=>$certificates,
+    'user'=>$user,
+    'mastered'=>$mastered,
+    'featured'=>$featured])
     {{-- all user related data section component --}}
     @endcomponent
    
