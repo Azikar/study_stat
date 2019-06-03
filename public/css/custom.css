@@ -135,7 +135,7 @@ hr {
     width: 100%;
     height: 10px;
     background-color: #343c49;
-    ;
+    position: relative;
     border-radius: 20px;
 }
 
@@ -516,6 +516,15 @@ hr {
 .download_img img {
     margin: 16%;
     margin-left: 27%;
+}
+
+.spliter {
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    left: 20%;
+    z-index: 1;
+    background: #222b3a;
 }
 
 @media (max-width:1240px) {
