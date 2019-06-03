@@ -20,7 +20,7 @@ class CreateUserCoursesTable extends Migration
             $table->foreign('course_id')->references('id')->on('courses');
             $table->integer('completion');
             $table->timestamp('last_accessed');
-            $table->int('time_spent');
+            $table->double('time_spent');
             $table->timestamps();
             $table->unique(['user_id', 'course_id']);
         });

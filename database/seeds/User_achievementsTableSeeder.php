@@ -23,6 +23,14 @@ class User_achievementsTableSeeder extends Seeder
             'user_id' => $users[0]->id,
             'achievement_id' => $achievements[1]->id,
         ]);
+        DB::table('user_achievements')->insert([
+            'user_id' => $users[0]->id,
+            'achievement_id' => $achievements[2]->id,
+        ]);
+        DB::table('user_achievements')->insert([
+            'user_id' => $users[0]->id,
+            'achievement_id' => $achievements[3]->id,
+        ]);
            
     }
 }

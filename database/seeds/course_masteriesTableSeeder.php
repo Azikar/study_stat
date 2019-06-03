@@ -25,5 +25,13 @@ class course_masteriesTableSeeder extends Seeder
             'course_id' =>  $courses[1]->id,
             'mastery_id'=>$masteries[1]->id
         ]);
+        DB::table('course_masteries')->insert([
+            'course_id' =>  $courses[2]->id,
+            'mastery_id'=>$masteries[2]->id
+        ]);
+        DB::table('course_masteries')->insert([
+            'course_id' =>  $courses[3]->id,
+            'mastery_id'=>$masteries[2]->id
+        ]);
     }
 }

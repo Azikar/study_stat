@@ -14,18 +14,18 @@ class ComplexitiesTableSeeder extends Seeder
         $achievements=App\Achievement::all();
         DB::table('complexities')->insert([
             'title' => 'BEGINNER',
-            'given_xp' => 5,
-            'xp_threshold'=>200,
+            'given_xp' => 40,
+            'xp_threshold'=>0,
         ]);
         DB::table('complexities')->insert([
             'title' => 'ADVANCED',
-            'given_xp' => 20,
-            'xp_threshold'=>600,
+            'given_xp' => 320,
+            'xp_threshold'=>800,
         ]);
         DB::table('complexities')->insert([
             'title' => 'INTERMEDIATE',
-            'given_xp' => 60,
-            'xp_threshold'=>2000,
+            'given_xp' => 500,
+            'xp_threshold'=>1600,
         ]);
     }
 }

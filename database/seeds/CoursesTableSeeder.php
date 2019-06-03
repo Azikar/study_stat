@@ -31,5 +31,11 @@ class CoursesTableSeeder extends Seeder
             'complexity_id'=>$complexities[2]->id,
             'certified'=>1,
         ]);
+        DB::table('courses')->insert([
+            'title' => 'Some interesting title',
+            'author_id' => $users[1]->id,
+            'complexity_id'=>$complexities[0]->id,
+            'certified'=>1,
+        ]);
     }
 }

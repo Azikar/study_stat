@@ -39,7 +39,6 @@ class Masteries_calculator_repo implements Masteries_calculator_repo_Interface
     public function build_response($user_mastery_data,$complexities)
     {
         $mastery_array=[];
-        
         foreach($user_mastery_data as $data){
             $old_treshold=0;
             foreach($complexities as $mastery)
@@ -59,8 +58,8 @@ class Masteries_calculator_repo implements Masteries_calculator_repo_Interface
                     }
                 }
                 
-            
-            $mastery_array[] = $object;
+            if(isset($object))
+                $mastery_array[] = $object;
             
         }
         return $mastery_array;

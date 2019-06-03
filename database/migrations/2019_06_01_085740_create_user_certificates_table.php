@@ -19,6 +19,7 @@ class CreateUserCertificatesTable extends Migration
             $table->integer('course_id')->unsigned();
             $table->foreign('course_id')->references('id')->on('courses');
             $table->timestamps();
+            $table->string('certificate_img');
             $table->integer('featured');
             $table->unique(['user_id', 'course_id']);
         });
