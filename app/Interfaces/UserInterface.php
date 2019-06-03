@@ -2,8 +2,7 @@
 
 namespace App\Interfaces;
 
-
-interface UserInterface 
+interface UserInterface
 {
     public function getUser($nickname);
     public function getUserById($id);

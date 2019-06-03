@@ -2,9 +2,8 @@
 
 namespace App\Interfaces;
 
-
-interface RecommendationInterface 
+interface RecommendationInterface
 {
     public function getAuthors($recommendations);
-   
+
 }

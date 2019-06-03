@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-
 class AchievementsTableSeeder extends Seeder
 {
     /**
@@ -16,22 +15,22 @@ class AchievementsTableSeeder extends Seeder
         DB::table('achievements')->insert([
             'icon' => 'crown.png',
             'name' => 'crown',
-            
+
         ]);
         DB::table('achievements')->insert([
             'icon' => 'nr1.png',
             'name' => 'crown',
-            
+
         ]);
         DB::table('achievements')->insert([
             'icon' => 'nr3.png',
             'name' => 'crown',
-            
+
         ]);
         DB::table('achievements')->insert([
             'icon' => 'shield.png',
             'name' => 'crown',
-            
+
         ]);
     }
 }

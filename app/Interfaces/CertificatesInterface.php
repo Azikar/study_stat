@@ -2,10 +2,9 @@
 
 namespace App\Interfaces;
 
-
-interface CertificatesInterface 
+interface CertificatesInterface
 {
     public function getAuthors($certificates);
-    public function getCertificateLimit($user,$limit);
+    public function getCertificateLimit($user, $limit);
     public function getFeaturedCertificate($user);
 }

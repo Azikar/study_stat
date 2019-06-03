@@ -2,8 +2,7 @@
 
 namespace App\Interfaces;
 
-
-interface Course_calc_Interface 
+interface Course_calc_Interface
 {
     public function total_Courses($courses);
     public function total_Hours($courses);
