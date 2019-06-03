@@ -11,7 +11,7 @@ php artisan db:seed --class=course_masteriesTableSeeder<br>
 php artisan db:seed --class=UserCoursesTableSeeder<br>
 php artisan db:seed --class=UserCertificatesTableSeeder<br>
 
-Only first user course and badges assigned<br>
+Only first user gets course and badges assigned<br>
 <h1>vuejs</h1>
 set API rout in "http-common.js"
 
