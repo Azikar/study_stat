@@ -461,6 +461,7 @@ hr {
     font-family: "Work Sans";
     font-weight: 300;
     margin-top: 1%;
+    min-width: fit-content;
 }
 
 .margin_l {
